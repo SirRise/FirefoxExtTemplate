@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "myExt",
+    "version": "1.0",
+    "description": "test extension",
+    "content_scripts": [{
+        "matches": ["*://*/"],
+        "js": [
+            "myExt.js"
+        ]
+    }],
+    "applications": {
+        "gecko": {
+            "id": "myExt@myext.com"
+        }
+    }
+}
